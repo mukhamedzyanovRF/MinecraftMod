@@ -12,13 +12,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(dop193.MOD_ID)
 public class dop193
 {
 
     public static final String MOD_ID = "dop193";
 
+    //ignore private nousage
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public dop193()
