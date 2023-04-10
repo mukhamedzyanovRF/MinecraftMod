@@ -1,6 +1,9 @@
 package com.aeresilf.dop193;
 
+import com.aeresilf.dop193.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -25,6 +28,7 @@ public class dop193
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus); //----------------------------------------------
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -36,9 +40,12 @@ public class dop193
 
     }
 
+    //добавление в предмета на вкладку ингридиентов ----------------------------------------
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
-
+        if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
+        event.accept(ModItems.BLACK_OPAL);
+        }
     }
 
 
