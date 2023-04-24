@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "dop193:block/deepslate_black_opal_ore"
-  }
-}
