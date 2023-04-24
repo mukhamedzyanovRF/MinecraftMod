@@ -1,4 +1,13 @@
 {
-  "item.dop193.black_opal": "Черный Опал",
-  "block.dop193.black_opal_block": "блок из Черного Опала"
+  "item.dop193.black_opal": "Черный опал",
+
+  "item.dop193.raw_black_opal": "Необработанный черный опал",
+
+  "block.dop193.black_opal_ore": "Руда черного опала",
+  "block.dop193.deepslate_black_opal_ore": "Сланцевая руда черного опала",
+  "block.dop193.endstone_black_opal_ore": "Конечная руда черного опала",
+  "block.dop193.netherrack_black_opal_ore": "Пустотная руда черного опала",
+  "creativemodetab.tutorial_tab": "Учебная вкладка",
+
+  "block.dop193.black_opal_block": "блок Черного опала"
 }
